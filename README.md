@@ -36,12 +36,13 @@ SignBridge is an open-source framework for real-time sign language recognition i
 - Comprehensive documentation
 
 ### 📋 In Progress / Planned
-- [ ] Pre-trained models on common sign languages (ASL, BSL, LSF)
 - [ ] Multi-hand support
-- [ ] Fingerspelling recognition (letter-level classification)
-- [ ] Transformer-based models for improved accuracy
 - [ ] Mobile extensions (Firefox, Safari)
 - [ ] Real-time video demo script
+- [ ] **Computational Intensive** (community contributions welcome):
+  - Pre-trained models on common sign languages (ASL, BSL, LSF) — requires training on large datasets
+  - Transformer-based models for improved accuracy — higher compute requirements
+  - Fingerspelling recognition (letter-level classification) — requires additional datasets
 
 ## Quick Start
 
@@ -345,6 +346,16 @@ The Dockerfile includes all dependencies and runs the FastAPI server on port 800
 - Chrome/Chromium extension only (Firefox/Safari support planned)
 - Inference disabled by default until model is trained
 
+## Computational Considerations
+
+Some planned features have significant computational requirements:
+
+- **Pre-trained models**: Training comprehensive models on WLASL or similar datasets requires days of GPU time (100+ hours)
+- **Transformer architectures**: More accurate but 3-5x slower to train than LSTM baselines
+- **Fingerspelling recognition**: Requires curated datasets and extensive annotation
+
+These are excellent opportunities for **community contributions**. If you have access to compute resources or are interested in these challenges, we'd love your involvement!
+
 ## Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
@@ -353,12 +364,13 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 - Testing requirements
 - Areas for contribution
 
-**High-priority areas:**
-- Transformer-based models
+**High-priority areas (open for community contribution):**
+- **Pre-trained models** (ASL, BSL, LSF) — Requires significant compute for training on large datasets. If interested, reach out!
+- **Transformer-based models** — Higher accuracy but more compute-intensive. Excellent opportunity for optimization work.
+- **Fingerspelling recognition** — Requires additional annotated datasets and letter-level classification.
 - Multi-hand support
-- Fingerspelling recognition
-- Pre-trained model weights
 - Performance optimization
+- Infrastructure improvements (CI/CD, automated testing)
 
 ## License
 
