@@ -336,10 +336,10 @@ The Dockerfile includes all dependencies and runs the FastAPI server on port 800
 
 ## Known Limitations
 
-- Single-hand detection only (multi-hand support in progress)
+- Single-hand detection only 
 - Requires well-lit environment for accurate landmark extraction
 - Model accuracy heavily dependent on training dataset coverage and quality
-- Chrome/Chromium extension only (Firefox/Safari support planned)
+- Chrome/Chromium extension only 
 - Inference disabled by default until model is trained
 
 ## Computational Considerations
@@ -354,7 +354,7 @@ These are excellent opportunities for **community contributions**. If you have a
 
 ## Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+Welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 - Development setup
 - Code style guidelines
 - Testing requirements
