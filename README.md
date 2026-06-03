@@ -35,11 +35,7 @@ SignBridge is an open-source framework for real-time sign language recognition i
 - Docker support for deployment
 - Comprehensive documentation
 
-### 📋 In Progress / Planned
-- [ ] Multi-hand support
-- [ ] Mobile extensions (Firefox, Safari)
-- [ ] Real-time video demo script
-- [ ] **Computational Intensive** (community contributions welcome):
+###  Computational Intensive(community contributions welcome):
   - Pre-trained models on common sign languages (ASL, BSL, LSF) — requires training on large datasets
   - Transformer-based models for improved accuracy — higher compute requirements
   - Fingerspelling recognition (letter-level classification) — requires additional datasets
